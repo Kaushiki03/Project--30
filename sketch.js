@@ -65,7 +65,7 @@ function draw(){
     background("black");
     Engine.update(engine);
     strokeWeight(2)
-    backgroundMusic.play()
+   
 
    // ground.display();
     base1.display();
@@ -129,6 +129,7 @@ function draw(){
     text ("Press Space for a Second Chance", 350,100)
     
 }
+ backgroundMusic.play()
 
 function mouseDragged(){
     Matter.Body.setPosition(polygon.body,{x:mouseX , y:mouseY})
